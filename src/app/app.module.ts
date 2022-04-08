@@ -14,6 +14,8 @@ import {TopBarModule} from "./shared/modules/backendErrorMessages/components/top
 import {PersistanceService} from "./shared/services/persistance.service";
 import {AuthInterceptor} from "./shared/services/auth.interceptor.service";
 import {GlobalFeedModule} from "./globalFeed/globalFeed.module";
+import {YourFeedModule} from "./yourFeed/yourFeed.module";
+import {TagFeedModule} from "./tagFeed/tagFeed.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +34,8 @@ import {GlobalFeedModule} from "./globalFeed/globalFeed.module";
     EffectsModule.forRoot([]),
     TopBarModule,
     GlobalFeedModule,
+    YourFeedModule,
+    TagFeedModule,
   ],
   providers: [
     PersistanceService,
